@@ -1,6 +1,6 @@
 # Versión v1.0
 
-Fecha: 2026
+Fecha: 20 de julio de 2026
 
 Contenido de esta versión:
 
