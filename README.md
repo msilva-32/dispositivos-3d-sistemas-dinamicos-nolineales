@@ -1,6 +1,6 @@
-# Dispositivos experimentales impresos en 3D para sistemas dinámicos
+# Dispositivos experimentales impresos en 3D
 
-Este repositorio reúne archivos STL, imágenes y orientaciones de montaje de dispositivos experimentales impresos en 3D para trabajar sistemas dinámicos en cursos de Física.
+Este repositorio reúne archivos STL, imágenes y orientaciones de montaje de dispositivos experimentales impresos en 3D para enseñar sistemas dinámicos en cursos de Física.
 
 ## Dispositivos incluidos
 
