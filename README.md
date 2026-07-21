@@ -23,5 +23,7 @@ v1.0
 
 ## Licencia
 
-Los documentos y guías se distribuyen bajo licencia CC BY 4.0.  
-Los modelos 3D se distribuyen bajo licencia CC BY-SA 4.0.
+Los materiales de este repositorio se comparten con fines educativos:
+
+- **Guías y textos:** Se publican bajo la licencia [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- **Modelos 3D:** Se publican bajo la licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
