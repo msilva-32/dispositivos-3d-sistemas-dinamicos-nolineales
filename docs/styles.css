@@ -1,35 +1,172 @@
 /* =========================
-   Imágenes de dispositivos
+   Estilos generales
+   ========================= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =========================
+   Encabezado
+   ========================= */
+
+header {
+  background: #222;
+  color: white;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   Contenido principal
+   ========================= */
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Tarjetas de dispositivos
+   ========================= */
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Imágenes
    ========================= */
 
 .images {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 1rem 0;
-  align-items: stretch;
 }
 
 .images img {
-  width: 100%;
-  height: 320px;
+  width: 300px;
+  height: 220px;
   object-fit: contain;
-  object-position: center;
-  background: #f2f2f2;
+  background: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 0.5rem;
   box-sizing: border-box;
-  display: block;
 }
 
-/* En pantallas chicas, una imagen debajo de la otra */
+/* =========================
+   Enlaces y botones
+   ========================= */
+
+a {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  background: #0056b3;
+  color: white;
+  border-radius: 6px;
+}
+
+.card a:hover {
+  background: #003f82;
+  text-decoration: none;
+}
+
+/* =========================
+   Listas
+   ========================= */
+
+ul {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* =========================
+   Pie de página
+   ========================= */
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: #eaeaea;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Adaptación a celulares
+   ========================= */
+
 @media (max-width: 700px) {
+  main {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
   .images {
-    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .images img {
-    height: 300px;
+    width: 100%;
+    max-width: 360px;
+    height: 240px;
   }
 }
