@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="Laboratorio abierto: dispositivos impresos en 3D para explorar y enseñar sistemas dinámicos no lineales mediante experiencias experimentales.">
+  <title>Laboratorio abierto | Física en movimiento</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <div class="topline"><div class="wrap topline-inner"><span><span class="signal" aria-hidden="true"></span> LABORATORIO ABIERTO · FÍSICA EXPERIMENTAL</span><span>Recurso académico · Impresión 3D</span></div></div>
+  <header class="nav-header">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#inicio" aria-label="Laboratorio abierto, inicio">
+        <svg class="logo-mark" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#fff" stroke="#17352b" stroke-width="1.5"/><path d="M22 9v14l-10 11m10-11 12 8" fill="none" stroke="#17352b" stroke-width="2.5" stroke-linecap="round"/><circle cx="12" cy="34" r="4.3" fill="#fc5d3d"/><circle cx="34" cy="31" r="4.3" fill="#2668e8"/><circle cx="22" cy="9" r="2.5" fill="#17352b"/></svg>
+        <span>Física <b>en movimiento</b><small>Dispositivos y experiencias de aula</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#experiencias">Experiencias</a><a href="#aula">Para el aula</a><a href="#construir">Construcción</a><a href="#recursos">Recursos</a>
+      </nav>
+      <a class="nav-pill" href="#recursos">Ver descargas <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> ENSEÑANZA DE LA FÍSICA · RECURSOS ABIERTOS</div>
+          <h1>La física se <span class="underline-accent">mueve.</span><br><span class="italic-word">Las ideas también.</span></h1>
+          <p class="hero-lead">Tres dispositivos impresos en 3D para explorar sistemas dinámicos no lineales desde la observación, la comparación y la formulación de explicaciones.</p>
+          <div class="hero-actions"><a class="btn btn-dark" href="#experiencias">Explorar dispositivos <span aria-hidden="true">↗</span></a><a class="btn btn-quiet" href="#aula">Conocer la propuesta <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-stat"><span class="hero-stat-number">03</span><span>dispositivos experimentales<br>un mismo punto de partida: <strong>preguntar y observar</strong></span></div>
+        </div>
+        <div class="hero-art" aria-label="Fotografías reales de los tres dispositivos construidos">
+          <span class="sketch sketch-a" aria-hidden="true"></span><span class="sketch sketch-b" aria-hidden="true"></span>
+          <figure class="hero-shot shot-main"><img src="../img/pendulo-imanes-impreso.png" alt="Péndulo magnético impreso en 3D, de base naranja perforada" loading="eager"><figcaption><span>01</span> Péndulo magnético</figcaption></figure>
+          <figure class="hero-shot shot-top"><img src="../img/pendulo-doble-impreso.png" alt="Péndulo doble impreso en 3D con brazos verdes y morados" loading="eager"><figcaption><span>03</span> Péndulo doble</figcaption></figure>
+          <figure class="hero-shot shot-bottom"><img src="../img/pajaro-carpintero-impreso.png" alt="Pájaro carpintero de colores sobre mástiles inclinados" loading="eager"><figcaption><span>02</span> Pájaro carpintero</figcaption></figure>
+          <span class="scribble-note" aria-hidden="true">Observar<br>↘ comparar</span>
+        </div>
+      </div>
+      <div class="wrap hero-bottom"><span>UN PROYECTO DE EXPERIMENTACIÓN Y FABRICACIÓN DIGITAL</span><span class="down-symbol">↓</span></div>
+    </section>
+
+    <section class="opening wrap" id="experiencias">
+      <div class="section-intro"><p class="kicker">01 / DISPOSITIVOS</p><h2>Tres formas de <em>explorar</em><br>un movimiento.</h2></div>
+      <p class="intro-aside">Cada montaje propone una pregunta física, variables para modificar y observaciones que pueden discutirse en clase.</p>
+      <div class="collection">
+        <button type="button" class="collection-card selected" data-device-card="mag" aria-pressed="true"><span class="card-top"><span class="chip">01 / MAGNETISMO</span><span class="card-arrow" aria-hidden="true">↗</span></span><span class="card-img c-mag"><img src="../img/pendulo-imanes-impreso.png" alt="Fotografía del péndulo magnético"></span><span class="card-bottom"><strong>Péndulo magnético</strong><small>¿La misma posición produce siempre la misma trayectoria?</small></span></button>
+        <button type="button" class="collection-card" data-device-card="bird" aria-pressed="false"><span class="card-top"><span class="chip">02 / FRICCIÓN</span><span class="card-arrow" aria-hidden="true">↗</span></span><span class="card-img c-bird"><img src="../img/pajaro-carpintero-impreso.png" alt="Fotografía del pájaro carpintero"></span><span class="card-bottom"><strong>Pájaro carpintero</strong><small>¿De qué depende el descenso del juguete?</small></span></button>
+        <button type="button" class="collection-card" data-device-card="double" aria-pressed="false"><span class="card-top"><span class="chip">03 / OSCILACIONES</span><span class="card-arrow" aria-hidden="true">↗</span></span><span class="card-img c-double"><img src="../img/pendulo-doble-impreso.png" alt="Fotografía del péndulo doble"></span><span class="card-bottom"><strong>Péndulo doble</strong><small>¿Dos movimientos próximos siguen siendo semejantes?</small></span></button>
+      </div>
+      <div class="detail" id="ficha" aria-label="Ficha del dispositivo seleccionado">
+        <div class="detail-toolbar"><p class="kicker">FICHA EXPERIMENTAL <span id="ficha-number">01 / 03</span></p><div class="media-toggle" role="group" aria-label="Tipo de imagen"><button class="active" type="button" data-media="foto" aria-pressed="true">Montaje real</button><button type="button" data-media="modelo" aria-pressed="false">Modelo 3D</button></div></div>
+        <div class="detail-grid">
+          <div class="detail-picture"><img id="detail-image" src="../img/pendulo-imanes-impreso.png" alt="Montaje del péndulo magnético"><span class="detail-image-note" id="detail-image-note">Montaje fabricado · PLA</span></div>
+          <div class="detail-body"><p class="kicker" id="detail-topic">INTERACCIÓN MAGNÉTICA</p><h3 id="detail-title">Péndulo magnético</h3><p id="detail-description">Cinco imanes fijos se disponen sobre una base perforada. Un sexto imán oscila suspendido por un hilo. La distribución de los imanes permite ensayar distintas configuraciones.</p><div class="learning-question"><span>PARA INVESTIGAR</span><strong id="detail-question">¿Cómo cambia la trayectoria si modificamos la posición de los imanes?</strong></div><div class="specs"><div><span>PIEZAS / MEDIDAS</span><p id="detail-spec-1">4 piezas PLA · mástil de 200 mm</p></div><div><span>COMPONENTES</span><p id="detail-spec-2">6 imanes de ferrita · hilo de poliéster 40/2</p></div></div><div class="detail-links"><a id="detail-stl" class="btn btn-dark" href="../descargas/pendulo-imanes.stl" download>Descargar STL <span aria-hidden="true">↓</span></a><a id="detail-source" class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.printables.com/model/459578-chaotic-pendulum">Diseño de referencia ↗</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learn" id="aula"><div class="wrap learn-grid"><div><p class="kicker kicker-light">02 / SECUENCIA DIDÁCTICA</p><h2>Antes de explicar,<br><em>hacer preguntas.</em></h2><p>La estrategia Predecir, Observar y Explicar (POE) ofrece una estructura para organizar experiencias con los dispositivos y discutir las ideas iniciales de los estudiantes.</p><a href="../descargas/guia-montaje.pdf" class="learn-link">Consultar la guía de montaje <span aria-hidden="true">↗</span></a></div><div class="poe-list"><article><span class="poe-index">01</span><div><h3>Predecir</h3><p>Los estudiantes anticipan el movimiento y justifican sus hipótesis antes del ensayo.</p></div><span class="poe-mark" aria-hidden="true">↗</span></article><article><span class="poe-index">02</span><div><h3>Observar</h3><p>Comparan repeticiones y registran qué cambia al modificar una condición.</p></div><span class="poe-mark" aria-hidden="true">◎</span></article><article><span class="poe-index">03</span><div><h3>Explicar</h3><p>Contrastan sus predicciones con la evidencia y elaboran interpretaciones físicas.</p></div><span class="poe-mark" aria-hidden="true">↳</span></article></div></div></section>
+
+    <section class="build wrap" id="construir"><div class="build-title"><p class="kicker">03 / FABRICACIÓN DIGITAL</p><h2>Del archivo al<br><em>dispositivo.</em></h2><p>Selección de modelos, adaptación de piezas y fabricación de montajes de bajo costo. La documentación registra los materiales y las características constructivas utilizadas.</p></div><div class="build-panel"><div class="build-icons"><div><span class="build-icon">◱</span><b>Adaptar</b><p>Tinkercad y OpenSCAD</p></div><div><span class="build-icon">▤</span><b>Imprimir</b><p>Bambu Lab A1 mini · PLA</p></div><div><span class="build-icon">⌁</span><b>Montar</b><p>Encastrar, unir y comprobar</p></div></div><div class="build-warning">Los ajustes de impresión dependen del perfil seleccionado en Bambu Studio. Se recomienda inspeccionar las piezas y verificar las articulaciones antes de realizar ensayos.</div></div></section>
+
+    <section class="downloads" id="recursos"><div class="wrap"><div class="downloads-head"><div><p class="kicker">04 / BIBLIOTECA</p><h2>Recursos para <em>construir.</em></h2></div><p>Descargas y documentación para reproducir los montajes, consultar materiales y preparar actividades.</p></div><div class="download-list"><a href="../descargas/guia-montaje.pdf"><span class="file-type">PDF</span><span><strong>Guía de montaje</strong><small>Orientaciones de construcción y funcionamiento</small></span><span class="download-arrow">↓</span></a><a href="../descargas/pendulo-imanes.stl"><span class="file-type">STL</span><span><strong>Péndulo magnético</strong><small>Archivo de impresión 3D</small></span><span class="download-arrow">↓</span></a><a href="../descargas/pajaro-carpintero.stl"><span class="file-type">STL</span><span><strong>Pájaro carpintero</strong><small>Archivo de impresión 3D</small></span><span class="download-arrow">↓</span></a><a href="../descargas/pendulo-doble.stl"><span class="file-type">STL</span><span><strong>Péndulo doble</strong><small>Archivo de impresión 3D</small></span><span class="download-arrow">↓</span></a></div></div></section>
+
+    <section class="sources wrap"><div><p class="kicker">05 / CRÉDITOS</p><h2>Diseños de referencia<br><em>y adaptaciones.</em></h2></div><div><p>Los dispositivos parten de modelos publicados por terceros, adaptados para la propuesta experimental. Los créditos permiten consultar cada fuente. Los permisos de redistribución de versiones derivadas deben verificarse con sus licencias originales.</p><div class="source-items"><a target="_blank" rel="noopener noreferrer" href="https://www.printables.com/model/459578-chaotic-pendulum">Péndulo magnético · Printables <span>↗</span></a><a target="_blank" rel="noopener noreferrer" href="https://www.nexprint.com/en/models/G6033465?printConfigId=G9424662">Pájaro carpintero · Nexprint <span>↗</span></a><a target="_blank" rel="noopener noreferrer" href="https://github.com/Lanv3r/chaos-theory-3d-printing/tree/main/double_pendulum">Péndulo doble · Lanv3r <span>↗</span></a></div></div></section>
+  </main>
+  <footer><div class="wrap footer-grid"><div><b>Física en movimiento.</b><p>Dispositivos impresos en 3D para enseñar sistemas dinámicos no lineales.</p></div><div><span>Material complementario del manuscrito</span><em>Péndulos, imanes y pájaros carpinteros: dispositivos impresos en 3D para enseñar dinámica no lineal.</em></div><a href="#inicio">Volver arriba ↑</a></div></footer>
+</body>
+</html>
