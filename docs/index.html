@@ -1,107 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Dispositivos 3D para sistemas dinámicos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Modelos 3D, fichas técnicas y recursos experimentales para enseñar sistemas dinámicos no lineales.">
+  <title>Laboratorio abierto | Dispositivos 3D de dinámica no lineal</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <h1>Dispositivos experimentales impresos en 3D</h1>
-    <p>Recursos para enseñar sistemas dinámicos en cursos de Física</p>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">∿</span><span>Laboratorio abierto <small>Física experimental · Impresión 3D</small></span></a>
+      <nav aria-label="Navegación principal">
+        <a href="#dispositivos">Dispositivos</a><a href="#fabricacion">Fabricación</a><a href="#recursos">Descargas</a><a href="#fuentes">Procedencia</a>
+      </nav>
+    </div>
   </header>
-
-  <main>
-<section>
-  <h2>Presentación</h2>
-  <p>
-    Este sitio reúne materiales complementarios asociados al artículo
-    <em>Péndulos, imanes y pájaros carpinteros: dispositivos impresos en 3D para enseñar dinámica no lineal</em>.
-    Se incluyen archivos STL, imágenes de modelos 3D, fotografías de piezas impresas
-    y orientaciones básicas de montaje de tres dispositivos: un péndulo magnético,
-    un pájaro carpintero y un péndulo doble.
-  </p>
-  <p>
-    El propósito de este material es favorecer la reproducción y adaptación de los dispositivos
-    en contextos educativos. Los recursos permiten explorar, desde el trabajo experimental,
-    ideas vinculadas con sistemas dinámicos, sensibilidad a las condiciones iniciales,
-    dependencia de parámetros, predictibilidad limitada y comportamiento no lineal.
-  </p>
-</section>
-
-    <section>
-      <h2>Dispositivos disponibles</h2>
-
-      <article class="card">
-        <h3>Péndulo magnético</h3>
-        <div class="images">
-          <img src="img/pendulo-imanes-modelo.png" alt="Modelo 3D del péndulo magnético">
-          <img src="img/pendulo-imanes-impreso.png" alt="Péndulo magnético impreso en 3D">
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="wrap hero-layout">
+        <div>
+          <p class="eyebrow">Material complementario para la enseñanza de Física</p>
+          <h1>Explorar la dinámica no lineal con dispositivos impresos en 3D</h1>
+          <p class="lead">Diseños adaptables, documentación de montaje y experiencias de observación para Educación Media, Formación Docente y cursos universitarios iniciales.</p>
+          <div class="actions"><a class="button primary" href="#dispositivos">Explorar dispositivos</a><a class="button ghost" href="descargas/guia-montaje.pdf">Guía de montaje (PDF)</a></div>
         </div>
-<p>
-  Dispositivo diseñado para analizar cómo la configuración de imanes y las condiciones iniciales
-  influyen en la trayectoria del péndulo y en la predictibilidad del sistema.
-</p>
-        <p><strong>Materiales no impresos:</strong> hilo, masa ferromagnética, imanes y soporte.</p>
-        <p><strong>Parámetros sugeridos:</strong> PLA, altura de capa 0,20 mm, relleno 15–20%.</p>
-        <a href="descargas/pendulo-imanes.stl">Descargar STL</a>
+        <div class="hero-photo"><img src="img/pendulo-doble-impreso.png" alt="Dos péndulos dobles impresos en 3D, dispuestos para comparar movimientos"><span>Del montaje físico a la discusión experimental</span></div>
+      </div>
+    </section>
+    <section class="section wrap intro">
+      <div><p class="eyebrow dark">Sobre el proyecto</p><h2>Tres dispositivos, distintas respuestas dinámicas</h2></div>
+      <p>Este repositorio acompaña el manuscrito <em>Péndulos, imanes y pájaros carpinteros: dispositivos impresos en 3D para enseñar dinámica no lineal</em>. Se reúnen archivos de impresión, imágenes y orientaciones para observar movimientos, modificar condiciones de funcionamiento y discutir modelos físicos. El comportamiento caótico depende de las condiciones del sistema y no se presupone en todos los ensayos.</p>
+    </section>
+    <section class="section wrap" id="dispositivos">
+      <div class="section-head"><div><p class="eyebrow dark">Colección experimental</p><h2>Dispositivos disponibles</h2></div><p>Modelos digitales, fotografías, materiales, dimensiones y archivos STL.</p></div>
+      <article class="device" id="magnetico">
+        <div class="photos"><img loading="lazy" src="img/pendulo-imanes-impreso.png" alt="Montaje del péndulo magnético"><img loading="lazy" src="img/pendulo-imanes-modelo.png" alt="Modelo digital del péndulo magnético"></div>
+        <div class="device-info"><span class="num">01 · INTERACCIONES MAGNÉTICAS</span><h3>Péndulo magnético</h3>
+          <p>La base hexagonal presenta 36 orificios distribuidos radialmente para variar las posiciones de cinco imanes fijos. Un sexto imán oscila suspendido mediante un hilo, con su polo norte orientado hacia abajo.</p>
+          <dl><div><dt>Fabricación</dt><dd>4 piezas impresas en PLA: base, 2 segmentos de mástil y soporte</dd></div><div><dt>Dimensiones</dt><dd>Base hexagonal de 80 mm de lado; mástil de 200 mm</dd></div><div><dt>Complementos</dt><dd>6 imanes de ferrita de Ø 15 mm y 3 mm de espesor, hilo de poliéster 40/2 y adhesivo de cianoacrilato</dd></div></dl>
+          <div class="links"><a class="button primary" href="descargas/pendulo-imanes.stl" download>Descargar STL</a><a class="text-link" href="https://www.printables.com/model/459578-chaotic-pendulum" target="_blank" rel="noopener noreferrer">Ver diseño de referencia en Printables</a></div>
+        </div>
       </article>
-
-      <article class="card">
-        <h3>Pájaro carpintero</h3>
-        <div class="images">
-          <img src="img/pajaro-carpintero-modelo.png" alt="Modelo 3D del pájaro carpintero">
-          <img src="img/pajaro-carpintero-impreso.png" alt="Pájaro carpintero impreso en 3D">
+      <article class="device" id="carpintero">
+        <div class="photos"><img loading="lazy" src="img/pajaro-carpintero-impreso.png" alt="Montaje del pájaro carpintero"><img loading="lazy" src="img/pajaro-carpintero-modelo.png" alt="Modelo digital del pájaro carpintero"></div>
+        <div class="device-info"><span class="num">02 · FRICCIÓN Y OSCILACIONES</span><h3>Pájaro carpintero</h3>
+          <p>Dispositivo con piezas impresas en PLA, incluidos el mástil, el manguito y los resortes. Se comparan geometrías angulares y curvas y se regula la inclinación mediante una articulación con bloqueo por apriete.</p>
+          <dl><div><dt>Fabricación</dt><dd>Componentes del mecanismo impresos en PLA</dd></div><div><dt>Dimensiones</dt><dd>Mástil de 200 mm; cuatro variantes de resortes de 40 mm</dd></div><div><dt>Montaje</dt><dd>Abrazaderas de fijación tipo C y articulación regulable</dd></div></dl>
+          <div class="links"><a class="button primary" href="descargas/pajaro-carpintero.stl" download>Descargar STL</a><a class="text-link" href="https://www.nexprint.com/en/models/G6033465?printConfigId=G9424662" target="_blank" rel="noopener noreferrer">Ver diseño de referencia en Nexprint</a></div>
         </div>
-<p>
-  Dispositivo diseñado para estudiar cómo la rigidez del resorte, la inclinación del mástil
-  y las condiciones iniciales influyen en el movimiento oscilatorio y en el descenso del sistema.
-</p>
-        <p><strong>Materiales no impresos:</strong> resorte, varilla, masa adicional y soporte.</p>
-        <p><strong>Parámetros sugeridos:</strong> PLA, altura de capa 0,20 mm, relleno 20%.</p>
-        <a href="descargas/pajaro-carpintero.stl">Descargar STL</a>
       </article>
-
-      <article class="card">
-        <h3>Péndulo doble</h3>
-        <div class="images">
-          <img src="img/pendulo-doble-modelo.png" alt="Modelo 3D del péndulo doble">
-          <img src="img/pendulo-doble-impreso.png" alt="Péndulo doble impreso en 3D">
+      <article class="device" id="doble">
+        <div class="photos"><img loading="lazy" src="img/pendulo-doble-impreso.png" alt="Dos péndulos dobles construidos"><img loading="lazy" src="img/pendulo-doble-modelo.png" alt="Modelo digital del péndulo doble"></div>
+        <div class="device-info"><span class="num">03 · MOVIMIENTOS ACOPLADOS</span><h3>Péndulo doble</h3>
+          <p>Dos péndulos de construcción semejante permiten comparar movimientos iniciados desde condiciones próximas. Los brazos se articulan mediante rodamientos estándar 608.</p>
+          <dl><div><dt>Fabricación</dt><dd>Piezas impresas en PLA; brazos de 160 y 130 mm</dd></div><div><dt>Articulaciones</dt><dd>2 rodamientos 608 por péndulo (Ø exterior 22 mm, Ø interior 8 mm, espesor 7 mm)</dd></div><div><dt>Montaje</dt><dd>Abrazaderas de fijación tipo C y adhesivo de cianoacrilato en los rodamientos</dd></div></dl>
+          <div class="links"><a class="button primary" href="descargas/pendulo-doble.stl" download>Descargar STL</a><a class="text-link" href="https://github.com/Lanv3r/chaos-theory-3d-printing/tree/main/double_pendulum" target="_blank" rel="noopener noreferrer">Ver diseño de referencia en GitHub</a></div>
         </div>
-<p>
-  Dispositivo diseñado para comparar la evolución de dos péndulos dobles iniciados
-  en condiciones similares y analizar la divergencia progresiva de sus movimientos.
-</p>
-        <p><strong>Materiales no impresos:</strong> rodamientos, tornillos, masas y soporte.</p>
-        <p><strong>Parámetros sugeridos:</strong> PLA, altura de capa 0,20 mm, relleno 20–30%.</p>
-        <a href="descargas/pendulo-doble.stl">Descargar STL</a>
       </article>
     </section>
-
-    <section>
-  <h2>Guía de montaje</h2>
-  <p>
-    La guía de montaje complementa los archivos STL con indicaciones para la impresión, el armado
-    y la puesta en funcionamiento de cada dispositivo. Su propósito es facilitar que los recursos
-    puedan reproducirse en otros contextos educativos, ajustando tolerancias, encastres, estabilidad
-    y condiciones de funcionamiento antes de su uso en actividades experimentales.
-  </p>
-  <a href="descargas/guia-montaje.pdf">Descargar guía de montaje</a>
-</section>
-
-   <section>
-  <h2>Licencia</h2>
-  <p>
-    Los materiales se comparten con fines educativos. Las guías y textos se publican bajo
-    licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. 
-    Los modelos 3D se publican bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>.
-  </p>
-</section>
+    <section class="section tone" id="fabricacion"><div class="wrap">
+      <p class="eyebrow dark">Procedimiento de construcción</p><h2>Diseño, impresión y montaje</h2>
+      <div class="steps">
+        <div><span>01</span><h3>Modelos y adaptaciones</h3><p>Selección de modelos de repositorios públicos. Operaciones de corte, incorporación de elementos geométricos y ajustes dimensionales mediante Tinkercad; diseño de piezas originales en OpenSCAD.</p></div>
+        <div><span>02</span><h3>Impresión 3D</h3><p>Impresora Bambu Lab A1 mini, tecnología FDM y filamento PLA. Preparación en Bambu Studio conservando los parámetros predeterminados del perfil seleccionado.</p></div>
+        <div><span>03</span><h3>Ensamblaje y controles</h3><p>Inspección de defectos de fabricación, deformaciones y encastres antes del montaje. Comprobación del movimiento de cada mecanismo tras el ensamblaje.</p></div>
+      </div>
+      <p class="note">No se indican porcentajes de relleno, temperaturas u orientaciones como valores empleados sin un registro verificable del archivo de impresión. Esos parámetros pueden variar con el perfil y la pieza.</p>
+    </div></section>
+    <section class="section wrap" id="recursos">
+      <div class="section-head"><div><p class="eyebrow dark">Material complementario</p><h2>Documentación y descargas</h2></div><p>Los archivos descargables conservan las rutas originales del repositorio.</p></div>
+      <div class="resource-grid">
+        <a class="resource" href="descargas/guia-montaje.pdf"><span>PDF</span><strong>Guía de montaje</strong><small>Documento de construcción y ensamblaje</small></a>
+        <a class="resource" href="https://github.com/msilva-32/dispositivos-3d-sistemas-dinamicos-nolineales/tree/main/docs/descargas" target="_blank" rel="noopener noreferrer"><span>STL</span><strong>Archivos de impresión</strong><small>Modelos disponibles en el repositorio</small></a>
+        <a class="resource" href="https://github.com/msilva-32/dispositivos-3d-sistemas-dinamicos-nolineales" target="_blank" rel="noopener noreferrer"><span>GIT</span><strong>Repositorio del proyecto</strong><small>Versiones y archivos de apoyo</small></a>
+      </div>
+      <h3 class="subhead">Orientaciones de trabajo en el aula</h3>
+      <p>Una secuencia inicial puede organizarse en tres momentos: formular predicciones sobre el movimiento, realizar ensayos al modificar una condición y elaborar explicaciones que comparen las observaciones con lo previsto. El registro mediante video permite ampliar el análisis de trayectorias y condiciones iniciales.</p>
+    </section>
+    <section class="section tone" id="fuentes"><div class="wrap">
+      <p class="eyebrow dark">Créditos y trazabilidad</p><h2>Procedencia de los modelos</h2>
+      <p>Los tres dispositivos parten de diseños publicados por terceros que fueron adaptados para los montajes del proyecto. Se identifican sus fuentes para reconocer su procedencia. Las condiciones de reutilización y redistribución de archivos derivados requieren verificar las licencias de cada diseño original.</p>
+      <div class="sources">
+        <div><strong>Péndulo magnético</strong><a href="https://www.printables.com/model/459578-chaotic-pendulum" target="_blank" rel="noopener noreferrer">Chaotic Pendulum · Printables</a><small>Autor y licencia: pendientes de comprobación</small></div>
+        <div><strong>Pájaro carpintero</strong><a href="https://www.nexprint.com/en/models/G6033465?printConfigId=G9424662" target="_blank" rel="noopener noreferrer">Modelo G6033465 · Nexprint</a><small>Autor y licencia: pendientes de comprobación</small></div>
+        <div><strong>Péndulo doble</strong><a href="https://github.com/Lanv3r/chaos-theory-3d-printing/tree/main/double_pendulum" target="_blank" rel="noopener noreferrer">3D Printing Chaos · Lanv3r</a><small>El repositorio consultado no contiene una licencia explícita</small></div>
+      </div>
+      <p class="note">La disponibilidad pública de un modelo no concede por sí misma autorización para distribuir adaptaciones bajo una licencia nueva. Deben verificarse los permisos de los autores originales.</p>
+    </div></section>
   </main>
-
-  <footer>
-    <p>Versión v1.0</p>
-  </footer>
+  <footer><div class="wrap footer"><div><strong>Laboratorio abierto · Física experimental</strong><small>Material complementario de un manuscrito sobre enseñanza de dinámica no lineal.</small></div><a href="#inicio">Volver al inicio ↑</a></div></footer>
 </body>
 </html>
